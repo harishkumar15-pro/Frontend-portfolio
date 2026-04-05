@@ -285,7 +285,7 @@ span {
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
-    animation: aboutSpinner 8s linear infinite;
+    animation: aboutspinner 8s linear infinite;
 }
 
 .about-content {
@@ -401,7 +401,7 @@ span {
 }
 
 .education-content .content p {
-    font-size: 1, 6rem;
+    font-size: 1.6rem;
     padding-top: .5rem;
 }
 
