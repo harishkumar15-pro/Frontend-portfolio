@@ -34,3 +34,23 @@ window.onscroll = () =>{
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
+
+// Contact form submission
+const form = document.querySelector('form');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('.btn');
+        const originalText = btn.innerText;
+        btn.innerText = 'Sending...';
+        
+        // Simulate network request
+        setTimeout(() => {
+            btn.innerText = 'Message Sent!';
+            form.reset();
+            setTimeout(() => {
+                btn.innerText = originalText;
+            }, 3000);
+        }, 1500);
+    });
+}
